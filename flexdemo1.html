@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex layout demo1</title>
+    <style>
+        .parent {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
+}
+
+.content {
+  flex-grow: 1;
+}
+  
+/* --------- Non-flexbox related styles --------- */
+.child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1%;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffe8c3;
+  background-color: #eab768;
+  border-radius: 10px;
+  border: 10px solid #f5cc8b;
+}
+
+body {
+  background-color: #282c35;
+  font-family: Verdana;
+  font-weight: 600;
+}
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">Header</div>
+        <div class="main">
+          <div class="child">Sidebar</div>
+          <div class="child content">Content</div>  
+        </div>
+        <div class="child">Footer</div>
+      </div>
+    
+</body>
+</html>
